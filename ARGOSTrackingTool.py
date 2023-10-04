@@ -41,9 +41,13 @@ for lineString in line_list:
   obs_lat = lineData[6]
   obs_lon = lineData[7]
 
-#add items to dictionaries 
-date_dict[record_id] = obs_date
-location_dict[record_id] = (obs_lat, obs_lon)
-
 #Print the location of sara
-#print(f"Record {record_id} indicates Sara was seen at lat:{obs_lat},lon:{obs_lon} on {obs_date}")
+  #print(f"Record {record_id} indicates Sara was seen at lat:{obs_lat},lon:{obs_lon} on {obs_date}")
+
+  #add items to dictionaries 
+  date_dict[record_id] = obs_date
+  location_dict[record_id] = (obs_lat, obs_lon)
+
+list(location_dict.keys())[0]
+print(location_dict['20616'])
+
